@@ -29,12 +29,9 @@ $$('.nav-control').forEach(element => {
 
 function setSubmenuPosition() {
   const navControls = $('#nav-controls').getBoundingClientRect();
-  const navitem = $('.nav-control').getBoundingClientRect();
-  $$('.sub-control-list').forEach(element => {
-    element.style.left = navControls.x + 'px';
-    element.style.top = navitem.y + navitem.height + 'px';
-    
-  });
+  const navitem = $$('.nav-control .sub-control-list')[1];
+  const prevTarget = $('.nav-control').getBoundingClientRect();
+  navitem.style.left = -prevTarget.width -24 + 'px';
   $$('.many-item').forEach(element => {
     element.style.width = navControls.width + 'px';
 
