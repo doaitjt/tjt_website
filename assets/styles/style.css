@@ -23,7 +23,7 @@ body:after {
   top: 0;
   right: 0;
   z-index: -1;
-  background-image: url(/assets/images/t_head.svg);
+  background-image: url(/tjt_website/assets/images/t_head.svg);
   width: 1000px;
   height: 898px;
 }
@@ -334,7 +334,7 @@ a {
   width: 1000px;
   height: 1000px;
   position: relative;
-  background-image: url(/assets/images/h_ecosystem.svg);
+  background-image: url(/tjt_website/assets/images/h_ecosystem.svg);
 }
 .tjex-ecosystem .circle {
   border: 1px solid rgba(189, 189, 189, 0.3);
@@ -434,7 +434,7 @@ a {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-image: url(/assets/images/ic_tick.svg);
+  background-image: url(/tjt_website/assets/images/ic_tick.svg);
 }
 
 .wwa {
@@ -484,7 +484,7 @@ a {
   top: -82px;
   right: 0;
   z-index: -1;
-  background-image: url(/assets/images/t_personnel.svg);
+  background-image: url(/tjt_website/assets/images/t_personnel.svg);
   width: 1160px;
   height: 754px;
   background-repeat: none;
