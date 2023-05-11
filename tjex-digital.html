@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" sizes="144x144" href="assets/images/tj_logo.png">
+  <title>TJ Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles//style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="assets/scripts/swiper.config.js" defer></script>
+</head>
+
+<body>
+  <svg display="none">
+    <symbol id="triangle-more" viewBox="0 0 8 6">
+      <path d="M4.41602 5.37596C4.21811 5.67283 3.78189 5.67283 3.58397 5.37596L0.518234 0.777349C0.296715 0.445072 0.534911 -6.52619e-07 0.934259 -6.17707e-07L7.06574 -8.16755e-08C7.46509 -4.67634e-08 7.70329 0.445073 7.48177 0.77735L4.41602 5.37596Z" />        
+    </symbol>
+    <symbol id="more" viewBox="0 0 12 7">
+      <path d="M11.78 0.999985C11.78 1.12665 11.7333 1.25332 11.6333 1.35332L7.28668 5.69999C6.94453 6.03951 6.48204 6.23004 6.00001 6.23004C5.51799 6.23004 5.0555 6.03951 4.71335 5.69999L0.366679 1.35332C0.173346 1.15999 0.173346 0.839985 0.366679 0.646652C0.560013 0.453319 0.880013 0.453319 1.07335 0.646652L5.42001 4.99332C5.74001 5.31332 6.26001 5.31332 6.58001 4.99332L10.9267 0.646652C11.12 0.453318 11.44 0.453318 11.6333 0.646652C11.7267 0.746652 11.78 0.873318 11.78 0.999985Z" fill="black"/>
+    </symbol>
+    <symbol id="btn-vector" viewBox="0 0 25 16">
+      <path d="M0.878197 7.29289C0.487673 7.68342 0.487673 8.31658 0.878197 8.70711L7.24216 15.0711C7.63268 15.4616 8.26585 15.4616 8.65637 15.0711C9.0469 14.6805 9.0469 14.0474 8.65637 13.6569L2.99952 8L8.65637 2.34315C9.0469 1.95262 9.0469 1.31946 8.65637 0.928932C8.26585 0.538408 7.63268 0.538408 7.24216 0.928932L0.878197 7.29289ZM24.4146 7L1.5853 7V9L24.4146 9V7Z" />
+    </symbol>
+  </svg>
+  <nav class="main-nav">
+    <div class="nav-head">
+      <div class="container">
+        <div class="row header">
+          <div class="col-12 col-md-6 ts-xl">
+            <span class="text-bolder">Hotline:</span> <span> (+84) 2432 668 834</span>
+          </div>
+          <div class="nav-actions col-6">
+            <div class="actions-box d-flex justify-content-end">
+              <a class="nav-action" href="https://facebook.com/"><img src="assets/images/a_fb.svg" alt="facebook" title="TJ Tech facebook"></a>
+              <a class="nav-action" href="https://instagram.com/"><img src="assets/images/a_ig.svg" alt="instagram" title="TJ Tech instagram"></a>
+              <a class="nav-action" href="https://www.linkedin.com/"><img src="assets/images/a_in.svg" alt="linkedin" title="TJ Tech linkedin"></a>
+              <a class="nav-action" href="https://twitter.com/"><img src="assets/images/a_tw.svg" alt="twitter" title="TJ Tech twitter"></a>
+              <a class="nav-action" href="https://youtube.com/"><img src="assets/images/a_yt.svg" alt="youtube" title="TJ Tech youtube"></a>
+              <a class="nav-action" href="https://google.com/"><img src="assets/images/a_gg.svg" alt="google" title="TJ Tech google"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-foot">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <a href="/" class="logo">
+            <img src="assets/images/main_logo.png" alt="logo" title="Home">
+          </a>
+          <div class="nav-controls" id="nav-controls">
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Products and Services</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item">
+                <div class="d-flex">
+                  <a href="crm-software.html" class="sub-item">CRM Softwares</a>
+                  <a href="complementary-supportive.html" class="sub-item">Supportive Features</a>
+                  <a href="system-developmemnt.html" class="sub-item">System Development</a>
+                </div>
+                <div class="d-flex">
+                  <a href="system-maintain.html" class="sub-item">System Maintenance</a>
+                  <a href="customer-support.html" class="sub-item">Customer Support</a>
+                  <a href="consulation-service.html" class="sub-item">Consultation Service</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Future Ecosystem</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item ecosystem">
+                <div class="d-flex">
+                  <a href="tjex-fund.html" class="sub-item">TJex.fund</a>
+                  <a href="tjex-trade.html" class="sub-item">TJex.trade</a>
+                  <a href="tjex-digital.html" class="sub-item">TJex.digital</a>
+                  <a href="tjex-finance.html" class="sub-item">TJex.finance</a>
+                </div>
+                <div class="d-flex">
+                  <a href="tjex-ai.html" class="sub-item">TJex.ai</a>
+                  <a href="tjex-estate.html" class="sub-item">TJex.estate</a>
+                  <a href="tjex-app.html" class="sub-item">TJex.app</a>
+                  <a href="tjex-insure.html" class="sub-item">TJex.insure</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Community</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list-short">
+                <div class="d-flex">
+                  <a href="faq.html" class="sub-item">FAQ</a>
+                  <a href="news-stories.html" class="sub-item">News and Stories</a>
+                </div>
+                <div class="d-flex">
+                  <a href="blog.html" class="sub-item">Blog</a>
+                  <a href="events.html" class="sub-item">Events</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Company</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item">
+                <div class="d-flex">
+                  <a href="about.html" class="sub-item">About Us</a>
+                  <a href="careers.html" class="sub-item">Careers</a>
+                  <a href="investor-relation.html" class="sub-item">Investor Relation</a>
+                </div>
+                <div class="d-flex">
+                  <a href="term.html" class="sub-item">Term Of Use</a>
+                  <a href="policy.html" class="sub-item">Privacy Policy</a>
+                  <a href="contact.html" class="sub-item">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub-actions">
+            <img src="assets/images/sa_search.svg" alt="">
+            <div class="change-lang" id="change-lang">
+              <img src="assets/images/sa_lang.svg" alt="">
+              <div class="lang">EN</div>
+              <svg class="more-ic">
+                <use href="#more" />
+              </svg>
+              <!-- <div class="lang-options">
+                <div class="lang-items">English</div>
+                <div class="lang-items">Vietnamese</div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5 ecosys-theme">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="text-intro w-95">Custom Software <br> Development</div>
+        <button class="btn-base learn-btn">Learn More</button>
+      </div>
+      <div class="col-12 col-md-6"><img style="width: 100%;" src="assets/images/t_ecosystem.svg" alt=""></div>
+    </div>
+    <div class="g-header text-center ecosys-leading" style="margin-top: 102px;">TJex.digital</div>
+    <div class="ecs-title">Low-cost currency exchange between ASEAN countries</div>
+    <div class="detail" style="margin-top: 52px;">
+      There are already many cryptocurrency exchange platforms around the world, but not many offer useful and unique services.
+      <br>
+      <br>
+      Currently, the response of financial institutions in each country to cryptocurrencies is not always user-friendly. But because there are many cases where newly issued cryptocurrencies plunge, some countries, such as Singapore, have begun to tighten regulations.
+      <br>
+      <br>
+      Despite of these negative issues surrounding cryptocurrency exchanges, one has to know that the digital financial revolution is still in its infancy. Just as the Internet lines first started with ISDN, digital finance will continue to grow at an accelerating pace and offer better services and opportunities. No one can stop the industrial revolution of ""Web3.0"" and that includes cryptocurrencies.
+      <br>
+      <br>
+      Trading and foreign conversion in the comforts of your own home are now possible through digital asset management. These two are the fastest-growing markets in the IT financial community, and that's what TJEX Digital offers.
+      <br>
+      <br>
+      We offer a user-friendly platform which can be utilized by a diverse group of users regardless of age, trading and exchange experiences, or amount of investment.
+      <br>
+      <br>
+      Through our platform, you can enjoy two unique features. First, start investing even with small amounts in the digital market such as cryptocurrency. Second, save exchange commission because the service fee is resonable compares to other existing platforms.
+    </div>
+    <div class="ecs-title tt-spacing">Low-cost currency exchange between ASEAN countries</div>
+    <div class="detail">Accordance with this, another service offered under TJEX Digital, called Sout-East Asian Digital Currency (SEA), is exchanging currencies at one's convenience with lesser costs. This is especially more beneficial to those who are working overseas and need to transfer funds back to their home country. Nowadays, there's a lot of existing services that offer exchanges of currency but with higher costs. With our platform, one can exchange currency to another efficiently. (Please view the example below.)    </div>
+
+    <div class="recipe-box text-center">
+      Current: PHP => USD => VND, 2 times commissions. 1% X 2 times = 2% <br>
+      Using TJEX Digital: PHP => USD => VND, just 1 time commissions. 0.1% X 1 time = 0.1%
+    </div>
+    <div class="detail">
+      This process allows you to reduce cost for conversion rates and online banking; even if it's small it can make a difference in people's lives, especially the regular income earners with limited access to financial instruments. Furthermore, as this accumulates over time and with frequency of transactions, it can definitely impact overall transactions thus, elevating the financial capacity of each entity.
+      <br>
+      <br>
+      For now, our service is pioneering to our Southeast Asian countries clients but as the company continues to grow, we are also looking forward to extend this solution to other continents in the future.
+    </div>
+    <div class="ecs-title tt-spacing">SEA-DC (South-East Asian Digital Currency)</div>
+    <div class="detail">
+      Gamechangers have redefined the rules and the nature of innovative efforts for both small and large-scale businesses globally and a lot of them are going digital such as mobile banking scheme, online payment, and etc.
+      <br><br>
+      According to researches, electronic payments between ASEAN and banks have improved recently. A Singapore-to-Vietnam and vice-versa internet transfer can be done in minutes. With SEA, we may achieve seamless business transactions among ASEAN countries regardless of their global stature and promote economic and diplomatic stability without worrying about money exchange constraints.
+      <br><br>
+      Launching the Asian common currency has two purposes:> increase the value of Southeast Asian countries included in this currency.> build an economic zone in which multiple countries can participate such as those that are using EURO.
+      <br><br>
+      This project is an offshoot of our long-term vision encapsulated in “Give People Freedom”, a CSR initiative that aims to create innovative projects that would make it possible for ordinary people to attain financial freedom.
+      <br><br>
+      Reducing cost for conversion rates and online banking, even if it's small it can make a difference in people's lives, especially the regular income earners with limited access to financial instruments. Furthermore, as this accumulates over time and with frequency of transactions, it can definitely impact overall transactions thus, elevating the financial capacity of each entity.
+    </div>
+
+  </div>
+
+ 
+  <footer class="tjex-footer base-footer">
+    <div class="container">
+      <div class="leave-info d-flex align-content-center justify-content-between" style="opacity: 0; visibility: hidden;">
+        <div class="info">
+          <div class="g-header">Follow Us</div>
+          <div class="g-detail">Never want to miss any new opportunity</div>
+        </div>
+        <input type="text" name="" id="leave-mail" placeholder="Enter Your Email">
+        <button class="btn-base subs-btn">Subscribe</button>
+      </div>
+      <div class="row footer-info">
+        <div class="col-12 col-xl-6">
+          <a href="#"><img src="assets/images/main_logo.svg" alt=""></a>
+          <br>
+          <div class="g-detail description pe-4">TJ TECH acknowledges the Traditional Custodians of the nation on which we operate and recognize their connection to land, water and community. We pay respect to Elders past, present and emerging.</div>
+          <div class="contact-item">
+            <img src="assets/images/ic_phone.svg" alt="">
+            (+84) 2432 668 834
+          </div>
+          <div class="contact-item">
+            <img src="assets/images/ic_mail.svg" alt="">
+            admin@tjtech.tech
+          </div>
+          <div class="contact-item">
+            <img src="assets/images/ic_location.svg" alt="">
+            Level 11, Capital Place Building, 29 Lieu Giai, Ba Dinh, Ha Noi
+          </div>
+        </div>
+        <div class="col-12 col-xl-6">
+          <div class="row">
+            <div class="col-6">
+              <div class="ps-5 title">About TJ TECH</div>
+              <div class="ps-5 foot-nav">Our Culture</div>
+              <div class="ps-5 foot-nav">White Paper</div>
+              <div class="ps-5 foot-nav">Career</div>
+              <div class="ps-5 foot-nav">Principle of Conduct</div>
+              <div class="ps-5 foot-nav">Terms of Use</div>
+              <div class="ps-5 foot-nav">Privacy Policy</div>
+              <div class="ps-5 foot-nav">Company</div>
+            </div>
+            <div class="col-6">
+              <div class="title">Useful Link</div>
+              <div class="foot-nav">TOP FAQ</div>
+              <div class="foot-nav">Announcements</div>
+              <div class="foot-nav">News And Stories</div>
+              <div class="foot-nav">Events</div>
+              <div class="foot-nav">Blog</div>
+              <div class="foot-nav">Support Center</div>
+              <div class="foot-nav">Feedback</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="g-normal text-center copy-right"></div>
+  </footer>
+
+
+</body>
+
+</html>
