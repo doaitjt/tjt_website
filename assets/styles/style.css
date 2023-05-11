@@ -153,6 +153,7 @@ a {
   transition: 0.25s;
   text-indent: 26px;
   position: relative;
+  color: #000000;
 }
 .nav-foot .nav-controls .nav-control .sub-control-list .sub-item:before, .nav-foot .nav-controls .nav-control .sub-control-list-short .sub-item:before {
   content: "";
@@ -643,15 +644,26 @@ a {
   margin-top: 130px;
   margin-bottom: 49px;
 }
+.crm-service .s-leading .figure {
+  margin-right: 0;
+  margin-left: 32px;
+}
+.crm-service .s-leading .figure .image-shadow {
+  right: 0;
+  height: 401px;
+}
+.crm-service .s-leading .figure .main-image {
+  left: 0;
+}
 .crm-service .figure {
-  width: 45%;
+  width: 40%;
   position: relative;
   margin-right: 32px;
 }
 .crm-service .figure .image-shadow {
   position: absolute;
   top: 0;
-  left: 75px;
+  left: 0;
   width: 401px;
   height: 533px;
   background: #EFFBFF;
@@ -663,7 +675,7 @@ a {
   bottom: 0;
 }
 .crm-service .descriptor {
-  width: 55%;
+  width: 60%;
 }
 .crm-service .descriptor-item {
   padding: 42px 32px;
@@ -678,4 +690,23 @@ a {
   font-size: 18px;
   line-height: 28px;
   color: #212121;
+}
+
+.system-development .leading .figure {
+  margin-right: 0;
+  margin-left: 32px;
+}
+.system-development .leading .figure .image-shadow {
+  right: 0;
+}
+.system-development .leading .figure .main-image {
+  left: 0;
+}
+
+.consultation-service .figure .image-shadow {
+  width: 70%;
+  left: unset;
+}
+.consultation-service .figure .main-image {
+  width: 368px;
 }/*# sourceMappingURL=style.css.map */
