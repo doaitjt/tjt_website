@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" sizes="144x144" href="assets/images/tj_logo.png">
+  <title>TJ Tech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles//style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="assets/scripts/swiper.config.js" defer></script>
+</head>
+
+<body>
+  <svg display="none">
+    <symbol id="triangle-more" viewBox="0 0 8 6">
+      <path d="M4.41602 5.37596C4.21811 5.67283 3.78189 5.67283 3.58397 5.37596L0.518234 0.777349C0.296715 0.445072 0.534911 -6.52619e-07 0.934259 -6.17707e-07L7.06574 -8.16755e-08C7.46509 -4.67634e-08 7.70329 0.445073 7.48177 0.77735L4.41602 5.37596Z" />        
+    </symbol>
+    <symbol id="more" viewBox="0 0 12 7">
+      <path d="M11.78 0.999985C11.78 1.12665 11.7333 1.25332 11.6333 1.35332L7.28668 5.69999C6.94453 6.03951 6.48204 6.23004 6.00001 6.23004C5.51799 6.23004 5.0555 6.03951 4.71335 5.69999L0.366679 1.35332C0.173346 1.15999 0.173346 0.839985 0.366679 0.646652C0.560013 0.453319 0.880013 0.453319 1.07335 0.646652L5.42001 4.99332C5.74001 5.31332 6.26001 5.31332 6.58001 4.99332L10.9267 0.646652C11.12 0.453318 11.44 0.453318 11.6333 0.646652C11.7267 0.746652 11.78 0.873318 11.78 0.999985Z" fill="black"/>
+    </symbol>
+    <symbol id="btn-vector" viewBox="0 0 25 16">
+      <path d="M0.878197 7.29289C0.487673 7.68342 0.487673 8.31658 0.878197 8.70711L7.24216 15.0711C7.63268 15.4616 8.26585 15.4616 8.65637 15.0711C9.0469 14.6805 9.0469 14.0474 8.65637 13.6569L2.99952 8L8.65637 2.34315C9.0469 1.95262 9.0469 1.31946 8.65637 0.928932C8.26585 0.538408 7.63268 0.538408 7.24216 0.928932L0.878197 7.29289ZM24.4146 7L1.5853 7V9L24.4146 9V7Z" />
+    </symbol>
+    <symbol id="goto-detail" viewBox="0 0 12 12" fill="none">
+        <path d="M11.0007 7.66667V1H4.33398" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 11L11 1" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>        
+    </symbol>
+  </svg>
+  <nav class="main-nav">
+    <div class="nav-head">
+      <div class="container">
+        <div class="row header">
+          <div class="col-12 col-md-6 ts-xl">
+            <span class="text-bolder">Hotline:</span> <span> (+84) 2432 668 834</span>
+          </div>
+          <div class="nav-actions col-6">
+            <div class="actions-box d-flex justify-content-end">
+              <a class="nav-action" href="https://facebook.com/"><img src="assets/images/a_fb.svg" alt="facebook" title="TJ Tech facebook"></a>
+              <a class="nav-action" href="https://instagram.com/"><img src="assets/images/a_ig.svg" alt="instagram" title="TJ Tech instagram"></a>
+              <a class="nav-action" href="https://www.linkedin.com/"><img src="assets/images/a_in.svg" alt="linkedin" title="TJ Tech linkedin"></a>
+              <a class="nav-action" href="https://twitter.com/"><img src="assets/images/a_tw.svg" alt="twitter" title="TJ Tech twitter"></a>
+              <a class="nav-action" href="https://youtube.com/"><img src="assets/images/a_yt.svg" alt="youtube" title="TJ Tech youtube"></a>
+              <a class="nav-action" href="https://google.com/"><img src="assets/images/a_gg.svg" alt="google" title="TJ Tech google"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-foot">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <a href="/" class="logo">
+            <img src="assets/images/main_logo.png" alt="logo" title="Home">
+          </a>
+          <div class="nav-controls" id="nav-controls">
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Products and Services</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item">
+                <div class="d-flex">
+                  <a href="crm-software.html" class="sub-item">CRM Softwares</a>
+                  <a href="complementary-supportive.html" class="sub-item">Supportive Features</a>
+                  <a href="system-developmemnt.html" class="sub-item">System Development</a>
+                </div>
+                <div class="d-flex">
+                  <a href="system-maintain.html" class="sub-item">System Maintenance</a>
+                  <a href="customer-support.html" class="sub-item">Customer Support</a>
+                  <a href="consulation-service.html" class="sub-item">Consultation Service</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Future Ecosystem</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item ecosystem">
+                <div class="d-flex">
+                  <a href="tjex-fund.html" class="sub-item">TJex.fund</a>
+                  <a href="tjex-trade.html" class="sub-item">TJex.trade</a>
+                  <a href="tjex-digital.html" class="sub-item">TJex.digital</a>
+                  <a href="tjex-finance.html" class="sub-item">TJex.finance</a>
+                </div>
+                <div class="d-flex">
+                  <a href="tjex-ai.html" class="sub-item">TJex.ai</a>
+                  <a href="tjex-estate.html" class="sub-item">TJex.estate</a>
+                  <a href="tjex-app.html" class="sub-item">TJex.app</a>
+                  <a href="tjex-insure.html" class="sub-item">TJex.insure</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Community</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list-short">
+                <div class="d-flex">
+                  <a href="faq.html" class="sub-item">FAQ</a>
+                  <a href="news-stories.html" class="sub-item">News and Stories</a>
+                </div>
+                <div class="d-flex">
+                  <a href="blog.html" class="sub-item">Blog</a>
+                  <a href="events.html" class="sub-item">Events</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-control ts-nm" onclick="">
+              <span class="nav-content">Company</span>
+              <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
+              <div class="sub-control-list many-item">
+                <div class="d-flex">
+                  <a href="about.html" class="sub-item">About Us</a>
+                  <a href="careers.html" class="sub-item">Careers</a>
+                  <a href="investor-relation.html" class="sub-item">Investor Relation</a>
+                </div>
+                <div class="d-flex">
+                  <a href="term.html" class="sub-item">Term Of Use</a>
+                  <a href="policy.html" class="sub-item">Privacy Policy</a>
+                  <a href="contact.html" class="sub-item">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub-actions">
+            <img src="assets/images/sa_search.svg" alt="">
+            <div class="change-lang" id="change-lang">
+              <img src="assets/images/sa_lang.svg" alt="">
+              <div class="lang">EN</div>
+              <svg class="more-ic">
+                <use href="#more" />
+              </svg>
+              <!-- <div class="lang-options">
+                <div class="lang-items">English</div>
+                <div class="lang-items">Vietnamese</div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5 ns-theme">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="text-intro w-95">The Future <br> Of Digital Mastery</div>
+        <button class="btn-base learn-btn">Learn More</button>
+      </div>
+      <div class="col-12 col-md-6"><img style="width: 100%;" src="assets/images/t_community.svg" alt=""></div>
+    </div>
+    <div class="g-header text-center ecosys-leading" style="margin-top: 102px; margin-bottom: 72px;">Events</div>
+    <div class="news-box stories-style">
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+        <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+         <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+         <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+         <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+         <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+      <div class="preview-box story-item">
+        <img src="assets/images/new_preview.png" alt="">
+         <div class="title">Travelling as a way of self-discovery and progress</div>
+        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="blog-detail.html?q=0" class="nav-detail">
+          Read Post
+          <svg><use href="#goto-detail" /></svg>
+        </a>
+      </div>
+    </div>
+    <div class="paginator" id="tjt-paginator">
+      <button class="page-nav me-4">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.66602 12.3337L1.33268 7.00033L6.66602 1.66699" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="page-index">1</button>
+      <button class="page-index">2</button>
+      <button class="page-index">3</button>
+      <button class="page-nav ms-4">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.33398 12.3337L6.66732 7.00033L1.33398 1.66699" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+ 
+  <footer class="tjex-footer base-footer">
+    <div class="container">
+      <div class="leave-info d-flex align-content-center justify-content-between" style="opacity: 0; visibility: hidden;">
+        <div class="info">
+          <div class="g-header">Follow Us</div>
+          <div class="g-detail">Never want to miss any new opportunity</div>
+        </div>
+        <input type="text" name="" id="leave-mail" placeholder="Enter Your Email">
+        <button class="btn-base subs-btn">Subscribe</button>
+      </div>
+      <div class="row footer-info">
+        <div class="col-12 col-xl-6">
+          <a href="#"><img src="assets/images/main_logo.svg" alt=""></a>
+          <br>
+          <div class="g-detail description pe-4">TJ TECH acknowledges the Traditional Custodians of the nation on which we operate and recognize their connection to land, water and community. We pay respect to Elders past, present and emerging.</div>
+          <div class="contact-item">
+            <img src="assets/images/ic_phone.svg" alt="">
+            (+84) 2432 668 834
+          </div>
+          <div class="contact-item">
+            <img src="assets/images/ic_mail.svg" alt="">
+            admin@tjtech.tech
+          </div>
+          <div class="contact-item">
+            <img src="assets/images/ic_location.svg" alt="">
+            Level 11, Capital Place Building, 29 Lieu Giai, Ba Dinh, Ha Noi
+          </div>
+        </div>
+        <div class="col-12 col-xl-6">
+          <div class="row">
+            <div class="col-6">
+              <div class="ps-5 title">About TJ TECH</div>
+              <div class="ps-5 foot-nav">Our Culture</div>
+              <div class="ps-5 foot-nav">White Paper</div>
+              <div class="ps-5 foot-nav">Career</div>
+              <div class="ps-5 foot-nav">Principle of Conduct</div>
+              <div class="ps-5 foot-nav">Terms of Use</div>
+              <div class="ps-5 foot-nav">Privacy Policy</div>
+              <div class="ps-5 foot-nav">Company</div>
+            </div>
+            <div class="col-6">
+              <div class="title">Useful Link</div>
+              <div class="foot-nav">TOP FAQ</div>
+              <div class="foot-nav">Announcements</div>
+              <div class="foot-nav">News And Stories</div>
+              <div class="foot-nav">Events</div>
+              <div class="foot-nav">Blog</div>
+              <div class="foot-nav">Support Center</div>
+              <div class="foot-nav">Feedback</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="g-normal text-center copy-right"></div>
+  </footer>
+
+
+</body>
+
+</html>

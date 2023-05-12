@@ -13,11 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/styles//style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="app.js" defer></script>
-  <script src="assets/scripts/swiper.config.js" defer></script>
+  <script src="assets/scripts/faq-detail.js" defer></script>
 </head>
 
 <body>
@@ -31,9 +29,8 @@
     <symbol id="btn-vector" viewBox="0 0 25 16">
       <path d="M0.878197 7.29289C0.487673 7.68342 0.487673 8.31658 0.878197 8.70711L7.24216 15.0711C7.63268 15.4616 8.26585 15.4616 8.65637 15.0711C9.0469 14.6805 9.0469 14.0474 8.65637 13.6569L2.99952 8L8.65637 2.34315C9.0469 1.95262 9.0469 1.31946 8.65637 0.928932C8.26585 0.538408 7.63268 0.538408 7.24216 0.928932L0.878197 7.29289ZM24.4146 7L1.5853 7V9L24.4146 9V7Z" />
     </symbol>
-    <symbol id="goto-detail" viewBox="0 0 12 12" fill="none">
-        <path d="M11.0007 7.66667V1H4.33398" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1 11L11 1" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>        
+    <symbol id="cross" viewBox="0 0 14 13">
+      <path d="M1.16194 11.3306C0.845537 11.647 0.83047 12.212 1.16948 12.5435C1.50095 12.875 2.06596 12.8674 2.38237 12.551L6.99286 7.93301L11.6109 12.551C11.9348 12.875 12.4923 12.875 12.8238 12.5435C13.1477 12.2045 13.1552 11.6545 12.8238 11.3306L8.21328 6.71258L12.8238 2.10209C13.1552 1.77815 13.1552 1.22068 12.8238 0.889203C12.4848 0.565263 11.9348 0.55773 11.6109 0.88167L6.99286 5.49969L2.38237 0.88167C2.06596 0.565263 1.49342 0.550196 1.16948 0.889203C0.838003 1.22068 0.845537 1.78569 1.16194 2.10209L5.77997 6.71258L1.16194 11.3306Z" fill="black"/>
     </symbol>
   </svg>
   <nav class="main-nav">
@@ -147,86 +144,39 @@
     </div>
   </nav>
 
-  <div class="container mt-5 pt-5 ns-theme">
+  <div class="container mt-5 pt-5 faq-root">
     <div class="row">
       <div class="col-12 col-md-6">
-        <div class="text-intro w-95">Discover Our Open <br> Positions Now</div>
+        <div class="text-intro w-95">The Future <br> Of Digital Mastery</div>
         <button class="btn-base learn-btn">Learn More</button>
       </div>
-      <div class="col-12 col-md-6"><img style="width: 100%;" src="assets/images/t_company.svg" alt=""></div>
+      <div class="col-12 col-md-6"><img style="width: 100%;" src="assets/images/t_community.svg" alt=""></div>
     </div>
-    <div class="g-header text-center ecosys-leading" style="margin-top: 102px; margin-bottom: 72px;">Careers</div>
-    <div class="news-box stories-style">
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-        <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
-      </div>
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-         <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
-      </div>
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-         <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
-      </div>
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-         <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
-      </div>
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-         <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
-      </div>
-      <div class="preview-box story-item">
-        <img src="assets/images/new_preview.png" alt="">
-         <div class="title">Travelling as a way of self-discovery and progress</div>
-        <div class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <a href="blog-detail.html?q=0" class="nav-detail">
-          Read Post
-          <svg><use href="#goto-detail" /></svg>
-        </a>
+    <div class="g-header text-center ecosys-leading" id="faq-header" style="margin-top: 102px; margin-bottom: 76px;">FAQ</div>
+    <div id="collapse-root">
+      <div class="faq-panel">
+        <div class="faq-panel-header">
+          Who are we and what type of products/services do we offer?
+          <button class="fqa-button">
+            <svg>
+              <use href="#cross" />
+            </svg>
+          </button>
+        </div>
+        <div class="faq-panel-body">
+          <div class="x-collapse">
+            <div class="content">
+              TJ Tech Group with its fully flexible high-end disruptive business model, is a Singaporean established and trusted Forex CRM provider, located at Capital Place in the heart of Hanoi’s financial quarter.
+              <br><br>
+              The team consists of 60 professionals that provide premium support to help our domestic and international clients maximise profit through Quality Cost Delivery techniques; they also act as a bridge for knowledge transfer.
+              <br><br>
+              We offer a professional gateway to financial markets, custom software development, cutting-edge products, multiple platforms, liquidity aggregation, and more.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="paginator" id="tjt-paginator">
-      <button class="page-nav me-4">
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6.66602 12.3337L1.33268 7.00033L6.66602 1.66699" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      <button class="page-index">1</button>
-      <button class="page-index">2</button>
-      <button class="page-index">3</button>
-      <button class="page-nav ms-4">
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.33398 12.3337L6.66732 7.00033L1.33398 1.66699" stroke="#212121" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-    </div>
+   
   </div>
 
  
