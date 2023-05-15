@@ -631,45 +631,48 @@ button {
   padding-right: 30px;
 }
 
-.tjex-footer {
-  background: #eefaff;
-  box-shadow: 0px -12px 40px 26px #eefaff;
-}
-.tjex-footer .leave-info {
-  transform: translateY(-130px);
+.leave-info {
+  transform: translateY(110px);
   padding: 28.5px 98px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   background: #ffffff;
 }
-.tjex-footer .leave-info .info {
+.leave-info .info {
   width: 404px;
 }
-.tjex-footer .leave-info .g-detail {
+.leave-info .g-detail {
   margin-top: 10px;
 }
-.tjex-footer .leave-info .subs-btn {
+.leave-info .subs-btn {
   width: 176px;
   height: 60px;
 }
-.tjex-footer .leave-info #leave-mail {
+.leave-info #leave-mail {
   height: 60px;
   border: 1px solid #d7d7d7;
   border-radius: 3px;
   width: calc(100% - 404px - 176px - 56px);
   padding: 0 20px;
 }
-.tjex-footer .leave-info #leave-mail::-moz-placeholder {
+.leave-info #leave-mail::-moz-placeholder {
   color: #616161;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
 }
-.tjex-footer .leave-info #leave-mail::placeholder {
+.leave-info #leave-mail::placeholder {
   color: #616161;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+
+.tjex-footer {
+  background: #eefaff;
+  box-shadow: 0px -12px 40px 26px #eefaff;
+  padding-top: 150px;
+  margin-top: 120px;
 }
 .tjex-footer .copy-right {
   padding: 36px 0;
@@ -677,12 +680,6 @@ button {
   /* display: flex;
   align-items: center;
   justify-content: center; */
-}
-.tjex-footer.home-footer {
-  margin-top: 241px;
-}
-.tjex-footer.base-footer {
-  margin-top: 100px;
 }
 .tjex-footer .footer-info {
   transform: translateY(-60px);
@@ -1180,4 +1177,61 @@ button {
   font-size: 18px;
   line-height: 24px;
   padding-right: 17%;
+}
+
+.feedback-tickets {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.feedback-tickets .ticket {
+  margin: 38.5px 15px;
+  width: calc(33.3333333333% - 30px);
+  padding: 20px;
+  transition: 0.25s;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  min-height: 384px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feedback-tickets .ticket:hover {
+  background-color: #0080E9;
+}
+.feedback-tickets .ticket:hover .content, .feedback-tickets .ticket:hover .author, .feedback-tickets .ticket:hover .sub {
+  color: #fff;
+}
+.feedback-tickets .ticket .content {
+  transition: 0.25s;
+  margin-top: 16px;
+  color: #7D7E7E;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.feedback-tickets .ticket .author {
+  color: #616161;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+.feedback-tickets .ticket .sub {
+  color: #616161;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.vote {
+  fill: #ededed;
+  width: 38px;
+  height: 38px;
+  margin-right: 15px;
+}
+.vote.voted {
+  fill: #FFD05A;
 }/*# sourceMappingURL=style.css.map */
