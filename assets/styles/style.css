@@ -130,7 +130,6 @@ button {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding: 18px;
   font-weight: 500;
@@ -206,7 +205,6 @@ button {
 }
 .nav-foot .nav-controls .nav-control .sub-control-list-short .sub-item {
   white-space: nowrap;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-right: 30px;
@@ -232,7 +230,6 @@ button {
 .nav-foot .sub-actions .change-lang .lang {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding: 0 12px 0 8px;
 }
@@ -637,12 +634,6 @@ button {
   font-size: 16px;
   line-height: 32px;
 }
-.tjex-footer .leave-info #leave-mail:-ms-input-placeholder {
-  color: #616161;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-}
 .tjex-footer .leave-info #leave-mail::placeholder {
   color: #616161;
   font-weight: 400;
@@ -831,13 +822,6 @@ button {
   font-size: 24px;
 }
 .faq-search-box input::-moz-placeholder {
-  color: #1b1c31;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  opacity: 0.4;
-}
-.faq-search-box input:-ms-input-placeholder {
   color: #1b1c31;
   font-weight: 500;
   font-size: 18px;
@@ -1068,4 +1052,69 @@ button {
 
 .pnt .ecs-title {
   margin-top: 40px;
+}
+
+.leave-form {
+  padding: 56px 32px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.leave-form .map {
+  padding-right: 12px;
+}
+.leave-form .map iframe {
+  width: 100%;
+}
+.leave-form .map iframe html {
+  display: none;
+}
+.leave-form .map iframe .place-card.place-card-large {
+  display: none;
+}
+.leave-form .contact-info {
+  display: flex;
+  padding-bottom: 16px;
+}
+.leave-form .contact-info .lead-ic {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+}
+.leave-form .c-title {
+  color: #616161;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+.leave-form .form-box button[type=submit] {
+  width: 100%;
+  background: linear-gradient(90deg, #80BAF9 -13.29%, #0080E9 110.76%);
+  border-radius: 5px;
+  padding: 8px 32px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 38px;
+}
+.leave-form .form-control-box {
+  margin-top: 32px;
+}
+.leave-form .form-control-box .text-input {
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 9px;
+  border: 1px solid #D8D8D8;
+  margin-top: 16px;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+.leave-form .form-control-box .text-input:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 3px 1px var(--nav-color);
 }/*# sourceMappingURL=style.css.map */
