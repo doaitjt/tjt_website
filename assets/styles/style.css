@@ -24,7 +24,7 @@ body:after {
   top: 0;
   right: 0;
   z-index: -1;
-  background-image: url("/tjt_website/assets/images/t_head.svg");
+  background-image: url("/assets/images/t_head.svg");
   width: 1000px;
   height: 898px;
 }
@@ -40,6 +40,30 @@ button {
 
 .ts-nm {
   font-size: 1rem;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
 }
 
 .text-bolder {
@@ -79,10 +103,17 @@ button {
 }
 
 .g-detail {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #212121;
+}
+
+.g-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
 }
 
 .g-normal {
@@ -371,7 +402,7 @@ button {
   width: 1000px;
   height: 1000px;
   position: relative;
-  background-image: url("/tjt_website/assets/images/h_ecosystem.svg");
+  background-image: url("/assets/images/h_ecosystem.svg");
 }
 .tjex-ecosystem .circle {
   border: 1px solid rgba(189, 189, 189, 0.3);
@@ -471,7 +502,7 @@ button {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-image: url("/tjt_website/assets/images/ic_tick.svg");
+  background-image: url("/assets/images/ic_tick.svg");
 }
 
 .wwa {
@@ -521,7 +552,7 @@ button {
   top: -82px;
   right: 0;
   z-index: -1;
-  background-image: url("/tjt_website/assets/images/t_personnel.svg");
+  background-image: url("/assets/images/t_personnel.svg");
   width: 1160px;
   height: 754px;
   background-repeat: none;
@@ -682,6 +713,13 @@ button {
   font-size: 18px;
   line-height: 28px;
   margin: 14px 0;
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.25s;
+}
+.tjex-footer .footer-info .foot-nav:hover {
+  color: var(--nav-color);
 }
 
 .crm-service .sbd {
@@ -1117,4 +1155,29 @@ button {
 .leave-form .form-control-box .text-input:focus-visible {
   outline: 0;
   box-shadow: 0 0 3px 1px var(--nav-color);
+}
+
+.nav-footer-theme .g-detail, .nav-footer-theme .g-title {
+  margin-bottom: 30px;
+}
+.nav-footer-theme .key-style {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 28px;
+  color: var(--nav-color);
+}
+
+.spc-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
+
+.spc-detail {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 17%;
 }/*# sourceMappingURL=style.css.map */

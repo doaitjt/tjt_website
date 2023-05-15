@@ -1,6 +1,6 @@
 $root: '/tjt_website';
 $local: '';
-$current: $root;
+$current: $local;
 
 * {
   margin: 0;
@@ -48,6 +48,25 @@ button {
   font-size: 1rem;
 }
 
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+
 .text-bolder {
   font-weight: 500;
 }
@@ -85,10 +104,17 @@ button {
 }
 
 .g-detail {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #212121;
+}
+
+.g-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 36px;
 }
 
 .g-normal {
@@ -697,6 +723,13 @@ button {
       font-size: 18px;
       line-height: 28px;
       margin: 14px 0;
+      width: 100%;
+      cursor: pointer;
+      display: inline-block;
+      transition: .25s;
+      &:hover {
+        color: var(--nav-color);
+      }
     }
   }
 }
@@ -1146,4 +1179,32 @@ button {
       }
     }
   }
+}
+
+/// footer nav page
+.nav-footer-theme {
+  .g-detail, .g-title {
+    margin-bottom: 30px;
+  }
+  .key-style {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--nav-color);
+  }
+}
+
+/// support-center
+.spc-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
+.spc-detail {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-right: 17%;
 }
